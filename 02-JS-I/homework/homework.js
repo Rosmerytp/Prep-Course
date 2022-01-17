@@ -1,10 +1,11 @@
+
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "Ros";
+const nuevaString = "Rosmery";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 8;
+const nuevoNum = 2;
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -29,7 +30,6 @@ function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
   return str
-
 }
 
 function suma(x, y) {
@@ -43,7 +43,6 @@ function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   return x - y
-
 }
 
 function multiplica(x, y) {
@@ -78,7 +77,6 @@ function tienenMismaLongitud(str1, str2) {
   } else {
     return false
   }
-
 }
 
 function menosQueNoventa(num) {
@@ -90,7 +88,6 @@ function menosQueNoventa(num) {
   } else {
     return false
   }
-
 }
 
 function mayorQueCincuenta(num) {
@@ -125,7 +122,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 !== 0) {
+  if (num % 2 === 1) {
     return true
   } else {
     return false
@@ -136,22 +133,19 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-
   return Math.pow(num, 2)
-
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow(num, 3);
-
+  return Math.pow(num, 3)
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.pow(num, exponent);
+  return Math.pow(num, exponent)
 }
 
 function redondearNumero(num) {
@@ -164,13 +158,12 @@ function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
   return Math.ceil(num)
-
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random(0 - 1)
+  return Math.random()
 }
 
 function esPositivo(numero) {
@@ -199,7 +192,6 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   return `${nombre} ${apellido}`
-
 }
 
 function obtenerSaludo(nombre) {
@@ -244,10 +236,10 @@ function esVocal(letra) {
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.length > 1) {
-    return "Dato incorrecto"
-  } else if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
     return "Es vocal"
+  } else if (letra.length > 1) {
+    return "Dato incorrecto"
   }
   return "Dato incorrecto"
 }
