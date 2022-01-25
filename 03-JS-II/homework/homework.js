@@ -138,11 +138,16 @@ function fizzBuzz(numero) {
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
+
   //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
+
   //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
+
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
+
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
-  //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+
+  //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
   if (num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos"
   } else if (num1 === 0 || num2 === 0 || num3 === 0) {
@@ -190,11 +195,11 @@ function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  let arrayTablaDel6 = []
+  let TablaDel6 = []
   for (let i = 0; i < 11; i++) {
-    arrayTablaDel6.push(6 * i)
+    TablaDel6.push(6 * i)
   }
-  return arrayTablaDel6
+  return TablaDel6
 }
 
 function tieneTresDigitos(numero) {
@@ -205,7 +210,6 @@ function tieneTresDigitos(numero) {
   } else {
     return false
   }
-
 }
 
 function doWhile(numero) {
